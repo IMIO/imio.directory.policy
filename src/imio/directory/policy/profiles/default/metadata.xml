@@ -3,5 +3,6 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-imio.directory.core:default</dependency>
+    <dependency>profile-plone.restapi:default</dependency>
   </dependencies>
 </metadata>
