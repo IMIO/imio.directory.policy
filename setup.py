@@ -57,7 +57,6 @@ setup(
         "plone.app.dexterity",
         "imio.directory.core",
         "imio.smartweb.locales",
-        "collective.bigbang",
     ],
     extras_require={
         "test": [
