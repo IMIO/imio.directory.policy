@@ -69,8 +69,4 @@ setup(
             "plone.app.robotframework[debug]",
         ],
     },
-    entry_points="""
-    [z3c.autoinclude.plugin]
-    target = plone
-    """,
 )
