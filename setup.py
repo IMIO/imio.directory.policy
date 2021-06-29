@@ -57,6 +57,7 @@ setup(
         "plone.app.dexterity",
         "imio.directory.core",
         "imio.smartweb.locales",
+        "pas.plugins.imio",
     ],
     extras_require={
         "test": [

@@ -10,6 +10,7 @@
 
   <include package="imio.smartweb.locales" />
   <include package="imio.directory.core" />
+  <include package="pas.plugins.imio" />
 
   <include file="permissions.zcml" />
   <include package=".browser" />
