@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
-from imio.directory.policy.testing import (
-    IMIO_DIRECTORY_POLICY_INTEGRATION_TESTING,
-)  # noqa: E501
+from imio.directory.policy.testing import IMIO_DIRECTORY_POLICY_INTEGRATION_TESTING
+from imio.directory.policy.utils import setup_multilingual_site
 from plone import api
+from plone.app.multilingual.api import is_translatable
 from plone.app.testing import setRoles, TEST_USER_ID
+from Products.CMFPlone.interfaces import ILanguage
 from Products.CMFPlone.utils import get_installer
 
 import unittest
@@ -30,6 +31,30 @@ class TestSetup(unittest.TestCase):
         from plone.browserlayer import utils
 
         self.assertIn(IImioDirectoryPolicyLayer, utils.registered_layers())
+
+    def test_multilingual(self):
+        self.assertIn("fr", self.portal.objectIds())
+        self.assertIn("nl", self.portal.objectIds())
+
+        setRoles(self.portal, TEST_USER_ID, ["Manager"])
+        entity = api.content.create(
+            container=self.portal,
+            type="imio.directory.Entity",
+            id="entity",
+        )
+        api.content.create(
+            container=entity,
+            type="imio.directory.Contact",
+            id="contact",
+        )
+        setup_multilingual_site(self.portal)
+        self.assertNotIn("entity", self.portal.objectIds())
+        self.assertIn("entity", self.portal.fr.objectIds())
+        entity = self.portal.fr.entity
+        self.assertIn("contact", entity.objectIds())
+        contact = entity.contact
+        self.assertTrue(is_translatable(contact))
+        self.assertEquals(ILanguage(contact).get_language(), "fr")
 
 
 class TestUninstall(unittest.TestCase):
