@@ -44,9 +44,4 @@
       name="imio.directory.policy-hiddenprofiles"
       />
 
-  <utility
-      factory=".setuphandlers.HiddenProducts"
-      name="imio.directory.policy-hiddenproducts"
-      />
-
 </configure>
