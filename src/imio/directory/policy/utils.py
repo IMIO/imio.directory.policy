@@ -7,7 +7,7 @@ from zope.component.hooks import getSite
 
 import logging
 
-logger = logging.getLogger("imio.smartweb.core")
+logger = logging.getLogger("imio.directory.policy")
 
 
 def remove_unused_contents(portal):
