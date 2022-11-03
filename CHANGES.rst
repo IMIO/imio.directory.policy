@@ -6,6 +6,10 @@ Changelog
 ------------------
 
 - Update to Plone 6.0.0 final
+- Add available languages to prepare for multilingual
+  [laulaz]
+
+- Update buildout to use Plone 6.0.0a3 packages versions
   [boulch]
 
 
