@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
-------------------
+1.0 (2022-11-15)
+----------------
 
 - Update to Plone 6.0.0 final
 - Add available languages to prepare for multilingual
