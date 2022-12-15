@@ -12,6 +12,7 @@ class HiddenProfiles(object):
     def getNonInstallableProfiles(self):
         """Hide uninstall profile from site-creation and quickinstaller."""
         return [
+            "imio.smartweb.common:default",
             "imio.directory.core:default",
             "imio.directory.policy:uninstall",
         ]
@@ -22,6 +23,7 @@ class HiddenProducts(object):
     def getNonInstallableProducts(self):
         """Hides profiles from QuickInstaller"""
         return [
+            "imio.smartweb.common",
             "imio.directory.core",
             "imio.directory.policy.upgrades",
         ]
