@@ -5,7 +5,7 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Update buildout to use Plone 6.0.0a3 packages versions
+- Update to Plone 6.0.0 final
   [boulch]
 
 
