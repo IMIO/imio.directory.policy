@@ -23,6 +23,7 @@ class HiddenProducts(object):
         """Hides profiles from QuickInstaller"""
         return [
             "imio.directory.core",
+            "imio.directory.policy.upgrades",
         ]
 
 
