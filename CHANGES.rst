@@ -5,13 +5,13 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update to Plone 6.0.0 final
+  [boulch]
 
 
 1.0 (2022-11-15)
 ----------------
 
-- Update to Plone 6.0.0 final
 - Add available languages to prepare for multilingual
   [laulaz]
 
