@@ -11,6 +11,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="upgrade_1002_to_1003"
+      title="Upgrade policy from 1002 to 1003"
+      directory="profiles/1002_to_1003"
+      description="Configure autopublishing settings"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <genericsetup:upgradeSteps
       source="1000"
       destination="1001"
@@ -28,6 +36,21 @@
     <genericsetup:upgradeDepends
         title="Reload plone.formwidget.geolocation registry"
         import_profile="plone.formwidget.geolocation:default"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      source="1002"
+      destination="1003"
+      profile="imio.directory.policy:default">
+    <genericsetup:upgradeDepends
+        title="Install collective.autopublishing"
+        import_profile="collective.autopublishing:default"
+        />
+    <genericsetup:upgradeDepends
+        title="Configure autopublishing settings"
+        import_profile="imio.directory.policy.upgrades:upgrade_1002_to_1003"
         import_steps="plone.app.registry"
         />
   </genericsetup:upgradeSteps>
