@@ -5,8 +5,6 @@
 
   <configure zcml:condition="installed AccessControl.security">
   <!-- -*- extra stuff goes here -*- -->
-
-
   </configure>
 
 </configure>
