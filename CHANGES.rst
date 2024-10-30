@@ -5,6 +5,9 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
+- WEB-4145 : Restrict permissions to Plone rest api
+  [boulch]
+
 - GHA tests on Python 3.8 3.9 and 3.10
   [remdub]
 
