@@ -27,6 +27,14 @@
     provides="Products.GenericSetup.interfaces.EXTENSION"
   />
 
+  <genericsetup:registerProfile
+      name="upgrade_1004_to_1005"
+      title="Upgrade policy 1004 to 1005"
+      directory="profiles/1004_to_1005"
+      description="Set moderateCaching for imio.directory.core.rest"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <genericsetup:upgradeSteps
       source="1000"
       destination="1001"
@@ -71,6 +79,16 @@
         title="Hide cropping action on Image type"
         import_profile="imio.directory.policy.upgrades:upgrade_1003_to_1004"
         import_steps="actions"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      source="1004"
+      destination="1005"
+      profile="imio.directory.policy:default">
+    <genericsetup:upgradeDepends
+        title="Set moderateCaching for imio.directory.core.rest"
+        import_profile="imio.directory.policy.upgrades:upgrade_1004_to_1005"
         />
   </genericsetup:upgradeSteps>
 
