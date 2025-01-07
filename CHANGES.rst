@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.4 (unreleased)
+1.1.4 (2025-01-07)
 ------------------
 
 - WEB-4153: Set moderateCaching for imio.directory.core.rest
