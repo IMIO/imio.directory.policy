@@ -5,7 +5,11 @@ Changelog
 1.1.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- GHA tests on Python 3.10 3.11, 3.12 and 3.13
+  [remdub]
+
+- Update Python classifiers to be compatible with Plone 6.1 and Python 3.13
+  [remdub]
 
 
 1.1.6 (2025-01-29)
