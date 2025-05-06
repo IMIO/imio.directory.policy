@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.7 (unreleased)
+1.1.7 (2025-05-06)
 ------------------
 
 - GHA tests on Python 3.10 3.11, 3.12 and 3.13
