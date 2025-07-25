@@ -68,6 +68,7 @@ setup(
         "collective.z3cform.select2",
         "eea.facetednavigation",
         "pas.plugins.imio",
+        "pas.plugins.kimug",
         "imio.gdpr",
         "imio.directory.core",
         "imio.smartweb.locales",
