@@ -3,7 +3,7 @@
 all: buildout
 
 bin/buildout: bin/pip buildout.cfg
-	bin/pip install -I -r requirements-6.0.txt
+	bin/pip install -I -r requirements-6.1.txt
 
 buildout: bin/instance
 
