@@ -50,6 +50,15 @@
       post_handler=".setuphandlers.uninstall"
       />
 
+  <genericsetup:registerProfile
+      name="demo"
+      title="imio.directory.policy (Demo content)"
+      description="Creates demo entities and contacts for imio.directory."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/demo"
+      post_handler=".setuphandlers.create_demo_content"
+      />
+
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="imio.directory.policy-hiddenprofiles"

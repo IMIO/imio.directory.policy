@@ -5,6 +5,9 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
+- Add demo profile
+  [boulch]
+
 - Migrate to Plone 6.1.3
   [boulch]
 
