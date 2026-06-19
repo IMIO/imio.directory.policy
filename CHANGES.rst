@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.9 (unreleased)
+1.1.9 (2026-06-19)
 ------------------
 
 - Drop support for Python 3.10 and 3.11
