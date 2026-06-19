@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Tests for the demo profile content."""
+
 from imio.directory.policy.testing import (
     IMIO_DIRECTORY_POLICY_DEMO_INTEGRATION_TESTING,
 )
