@@ -5,6 +5,9 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
+- KEYC-77: Remove pas.plugins.imio from dependencies
+  [remdub]
+
 - Add demo profile
   [boulch]
 
