@@ -5,6 +5,9 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
+- Drop support for Python 3.10 and 3.11
+  [remdub]
+
 - KEYC-77: Remove pas.plugins.imio from dependencies
   [remdub]
 
