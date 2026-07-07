@@ -5,7 +5,8 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Migrate dev environment to Plone 6.1.5 / Buildout 5
+  [remdub]
 
 
 1.1.9 (2026-06-19)
