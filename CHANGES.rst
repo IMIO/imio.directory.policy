@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.1.10 (unreleased)
--------------------
+2.0.0 (2026-11-20)
+------------------
 
 - Migrate dev environment to Plone 6.1.5 / Buildout 5
   [remdub]
